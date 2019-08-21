@@ -1,0 +1,66 @@
+html{
+    height:100vh;
+
+}
+body{
+    padding:0;
+    margin: 0;
+    display:flex;
+}
+
+.nav-wrapper{
+background-color: aqua;
+width: 100vw;
+height: 162px
+
+}
+.innerText{
+    background-color: rgb(0, 42, 255);
+}
+.key-messages{
+    background-color: rgb(209, 23, 168);
+}
+.message{
+    background-color: rgb(22, 176, 51);
+}
+.featured-items{
+    background-color: rgb(205, 116, 15);
+}
+.video-sell{
+    background-color: rgb(108, 112, 112);
+}
+.features{
+    background-color: aqua;
+}
+.touchyfeely-pitch{
+    background-color: rgb(112, 205, 13);
+}
+.newsletter-email{
+    background-color: rgb(10, 87, 108);
+}
+.map{
+    background-color: rgb(102, 170, 50);
+}
+.social{
+    background-color: rgb(174, 131, 227);
+}
+.social-links{
+    background-color: rgb(227, 36, 186);
+}
+.payment-links{
+    background-color: rgb(15, 91, 91);
+}
+.footer-meta{
+    background-color: rgb(255, 0, 115);
+}
+
+
+header{
+    background-color: rgb(246, 255, 0);
+}
+
+footer{
+background-color: rgb(50, 16, 137);
+}
+
+
