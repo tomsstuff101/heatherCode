@@ -1,66 +1,258 @@
-html{
-    height:100vh;
+@import url('https://fonts.googleapis.com/css?family=Della+Respira&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap');
 
-}
-body{
-    padding:0;
+html, body {
     margin: 0;
-    display:flex;
+    padding: 0;
+
+    }
+    
+    /* overflow-y: scroll; */
+    /* content clipped with scrolling */
+
+
+body {
+    background-color: rgb(192, 133, 133);
+    /* max-width: 3500px; */
+    font-family: 'Della Respira',serif, 'Helvetica Neue',Helvetica,Arial,sans-serif;
 }
 
-.nav-wrapper{
-background-color: aqua;
-width: 100vw;
-height: 162px
+header{
+    display: flex;
+    justify-content: center;
+    margin-top:15px;
+    min-width: 20px;
+    background-color: yellow;
+}
 
-}
-.innerText{
-    background-color: rgb(0, 42, 255);
-}
-.key-messages{
-    background-color: rgb(209, 23, 168);
-}
-.message{
-    background-color: rgb(22, 176, 51);
-}
-.featured-items{
-    background-color: rgb(205, 116, 15);
-}
-.video-sell{
-    background-color: rgb(108, 112, 112);
-}
-.features{
+
+.nav-wrapper {
+    display: flex;
+    position: relative;
+    flex-direction: column;
     background-color: aqua;
+    /* height: 162px; */
+    /* max-width: 1360px;
+    margin: 0 auto; */
+
+    max-width: 1230px;
+    margin: 10px auto;
 }
-.touchyfeely-pitch{
+
+
+
+.topStuff {
+    display: flex;
+    background-color: greenyellow;
+    height: 50px;
+}
+
+.topStuff li{
+    list-style: none;
+}
+
+#logo {
+    width: 100%;
+    background-color: rgb(8, 165, 81);
+}
+
+#search {
+    width: 300px;
+    height: 56px;
+    padding: 0px 45px 0px 20px;
+    background-color: blueviolet;
+}
+
+
+#account {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 235px;
+    height: 56px;
+    padding: 0px 45px 0px 20px;
+    background-color: brown;
+}
+
+li.myac{
+    position: relative;
+    background-color: yellow;
+    width: 100px;
+    right: 180px;
+}
+
+li.money{
+    position: relative;
+    background-color: rgb(136, 187, 40);
+    width: 100px;
+    right: 130px;
+
+}
+
+#basket {
+    width: 67px;
+    height: 56px;
+    padding: 0px 45px 0px 20px;
+    background-color: cadetblue;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    padding: 15px;
+    background-color: #483076;
+    list-style: none;
+    font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+
+}
+
+
+header nav a{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+
+
+
+.innerText {
+    display: flex;
+    position: relative;
+    background-color: rgb(0, 42, 255);
+    width: 100vw;
+    height: 450px;
+    overflow-x: hidden;
+}
+
+.innerText-image img {
+
+    /* max-width: 2000px; */
+    /* width: 100%;
+    height: 450px; */
+    position: absolute;
+    top: 0;
+    /* left: 50%;  */
+    width: 2000px;
+    max-width: 2000px; 
+    /* transform: translate(-30%, 0); */
+
+  
+
+}
+
+.innerText .innerText-text {
+    display: flex;
+    position: relative;
+    width: 80%;
+
+}
+
+
+.key-messages {
+    background-color: rgb(209, 23, 168);
+    display: flex;
+    width: 100%;
+    height: 200px;
+}
+
+.message {
+    /*background-color: rgb(22, 176, 51);*/
+    width: 33.33vw;
+    height: 170px;
+}
+
+.featured-items {
+    display: flex;
+    background-color: rgb(205, 116, 15);
+    width: 100%;
+    height: 810px;
+}
+
+.video-sell {
+    background-color: rgb(108, 112, 112);
+    display: flex;
+    width: 100%;
+    height: 472px;
+}
+
+.features {
+    background-color: aqua;
+    width: 100vw;
+    height: 870px;
+}
+
+.touchyfeely-pitch {
     background-color: rgb(112, 205, 13);
+    width: 100vw;
+    height: 450px;
 }
-.newsletter-email{
+
+.newsletter-email {
     background-color: rgb(10, 87, 108);
+    width: 100vw;
+    height: 100px;
 }
-.map{
+
+.map {
     background-color: rgb(102, 170, 50);
 }
-.social{
+
+.social {
     background-color: rgb(174, 131, 227);
 }
-.social-links{
+
+.social-links {
     background-color: rgb(227, 36, 186);
 }
-.payment-links{
+
+.payment-links {
     background-color: rgb(15, 91, 91);
 }
-.footer-meta{
+
+.footer-meta {
     background-color: rgb(255, 0, 115);
 }
 
 
-header{
+header {
     background-color: rgb(246, 255, 0);
 }
 
-footer{
-background-color: rgb(50, 16, 137);
+footer {
+    background-color: rgb(50, 16, 137);
 }
 
 
+
+
+/*
+
+color Palette
+
+#483076    /* purple 
+#7dba9e    /*greeny
+#EEEEEE    /* softGrey
+#f1f1f1    /* softGrey2
+#323232    /*softBlack
+#666666    /*blacky text
+
+
+
+
+
+
+
+
+media query
+
+(max-width:1379) and (min-width: 801)
+
+(max-width: 800px)
+
+(max-width: 640px)
+
+
+*/
