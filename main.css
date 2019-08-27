@@ -30,20 +30,23 @@ h1,h2,h3,h4,h5,h6{
 
 header{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
     margin-top:15px;
     min-width: 20px;
     background-color: #FFFFFF;
 }
 
 
-.nav-wrapper {
+.top-wrapper {
     display: flex;
     position: relative;
     flex-direction: column;
     background-color: rgb(255, 255, 255);
     max-width: 1380px;
     margin: 10px auto;
+    width: 80vw;
 }
 
 
@@ -59,8 +62,9 @@ header{
 }
 
 #logo {
-    width: 100%;
+    /* width: 100%; */
     background-color: rgb(255, 255, 255);
+    margin-right: 100px;
 }
 
 .search {
@@ -96,18 +100,39 @@ li.money{
 
 }
 
+.searchAcountWrapper{
+    display: flex;
+}
 
-li.search{
-    font-size: 1.125rem;
+.searchWrapper{
+display: flex;
+flex-direction: row;
+width: 300px;
+}
+
+.searchWrapper input{
+    font-size: 18px;
     height: 56px;
     line-height: 56px;
-    padding: 0 45px 0 20px;
-    background: 0 0;
-    border: 0;
-    border-radius: 0;
     font-weight: 300;
     color: #323232;
     font-style: italic;
+    border: none;
+}
+
+/* got the placeholder color via trial and error 
+couldn't see it on dev tools? */
+.searchWrapper input::placeholder {
+    color: #bbb;
+}
+
+
+.searchWrapper i{
+    color: #483076;
+    width: 14px;
+    height: 14px;
+    padding: 21px;
+    background-color: #F1F1F1;
 }
 
 
@@ -130,6 +155,7 @@ nav {
     /* font-weight: 300; */
     font-size: 15px;
     letter-spacing: 0.05em;
+    width: 1360px;
 
 }
 
@@ -244,11 +270,11 @@ button, .button{
 }
 
 .angleRight{
-    left: 96%;
+    right: 9%;
 }
 
 .angleLeft{
-    left: 2%;
+    left: 9%;
 }
 
 .angleRightCarosel{
